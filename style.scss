@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+$blue: #1A2250;
+
+/*colors*/
+
+.bg-box {
+    .bg-linear {
+        height: 120vh;
+        width: 140vh;
+        position: fixed;
+        top: -60px;
+        background-image: linear-gradient(to bottom right, #FF8BE0, #FFE364);
+        border-radius: 400px;
+    }
+}
+
+.menu-box {
+    position: relative;
+    margin: 85px 0px;
+    max-width: 730px;
+    background-color: #ffffff;
+    box-shadow: 0px 26px 40px 0px rgba(5, 19, 65, 0.25);
+    img {
+        padding: 20px;
+    }
+    .head-box {
+        padding: 10px;
+        .head-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: $blue;
+            font-size: 1.625rem;
+            margin: 30px 0px 10px;
+        }
+        .head-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: $blue;
+            font-size: 1.25rem;
+        }
+    }
+    form {
+        padding: 10px;
+         ::placeholder {
+            color: $blue;
+        }
+        input {
+            height: 50px;
+        }
+        button {
+            margin-top: 10px;
+            height: 50px;
+            background-image: linear-gradient(to bottom right, rgb(139, 205, 255), rgb(100, 135, 255));
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.25rem;
+            transition: all .2s;
+            box-shadow: 0px 9px 27px 0px rgba(108, 157, 243, 0.6);
+            &:hover {
+                color: #000;
+            }
+        }
+        small {
+            padding-top: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.49;
+            letter-spacing: normal;
+            text-align: center;
+            color: #1a2250;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+    .menu-box {
+        max-width: 350px;
+        margin: 20px 0px;
+        img {}
+        .head-box {
+            .head-title {
+                margin-top: 0px;
+            }
+        }
+    }
+}

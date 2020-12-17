@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*colors*/
+.bg-box .bg-linear {
+  height: 120vh;
+  width: 140vh;
+  position: fixed;
+  top: -60px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF8BE0), to(#FFE364));
+  background-image: linear-gradient(to bottom right, #FF8BE0, #FFE364);
+  border-radius: 400px;
+}
+
+.menu-box {
+  position: relative;
+  margin: 85px 0px;
+  max-width: 730px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 26px 40px 0px rgba(5, 19, 65, 0.25);
+          box-shadow: 0px 26px 40px 0px rgba(5, 19, 65, 0.25);
+}
+
+.menu-box img {
+  padding: 20px;
+}
+
+.menu-box .head-box {
+  padding: 10px;
+}
+
+.menu-box .head-box .head-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #1A2250;
+  font-size: 1.625rem;
+  margin: 30px 0px 10px;
+}
+
+.menu-box .head-box .head-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #1A2250;
+  font-size: 1.25rem;
+}
+
+.menu-box form {
+  padding: 10px;
+}
+
+.menu-box form ::-webkit-input-placeholder {
+  color: #1A2250;
+}
+
+.menu-box form :-ms-input-placeholder {
+  color: #1A2250;
+}
+
+.menu-box form ::-ms-input-placeholder {
+  color: #1A2250;
+}
+
+.menu-box form ::placeholder {
+  color: #1A2250;
+}
+
+.menu-box form input {
+  height: 50px;
+}
+
+.menu-box form button {
+  margin-top: 10px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#8bcdff), to(#6487ff));
+  background-image: linear-gradient(to bottom right, #8bcdff, #6487ff);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.25rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-shadow: 0px 9px 27px 0px rgba(108, 157, 243, 0.6);
+          box-shadow: 0px 9px 27px 0px rgba(108, 157, 243, 0.6);
+}
+
+.menu-box form button:hover {
+  color: #000;
+}
+
+.menu-box form small {
+  padding-top: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.49;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1a2250;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .menu-box {
+    max-width: 350px;
+    margin: 20px 0px;
+  }
+  .menu-box .head-box .head-title {
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
